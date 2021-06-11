@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch cd3",
+            "request": "launch",
+            "mainClass": "cd3",
+            "projectName": "codewars_3952bad2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch cd1",
+            "request": "launch",
+            "mainClass": "cd1",
+            "projectName": "codewars_3952bad2"
+        }
+    ]
+}
