@@ -1,1 +1,1 @@
-# www.codewars.com
+Exercises from www.codewars.com.
