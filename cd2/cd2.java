@@ -10,7 +10,9 @@ Examples
 public class cd2 {
     public static void main(String args[]){
         int b[] = sort(new int[]{5, 8, 6, 3, 4});
-        System.out.println("123");
+        for (int i=0;i<b.length;i++){
+            System.out.println(Integer.toString(b[i]));
+        }
     }
     static int[] sort(int array[]){
         int tmp;

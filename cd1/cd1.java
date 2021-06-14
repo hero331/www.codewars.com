@@ -13,16 +13,13 @@ Examples:
 "(( @"     =>  "))((" 
 
 Notes
-Assertion messages may be unclear about what they display in some languages. If you read "...
-It Should encode XXX", the "XXX" is the expected result, not the input!
+Assertion messages may be unclear about what they display in some languages. If you read "..."
+It Should encode "X X X", the "X X X" is the expected result, not the input!
 */
 
 class cd1 {
     public static void main(String args[]) {
         System.out.println(DuplicateEncoder("Prespecialized"));
-        //System.out.println(run("recede"));
-        //System.out.println(run("Success"));
-        //System.out.println(run("(( @"));
     }
 
     static String DuplicateEncoder(String word){

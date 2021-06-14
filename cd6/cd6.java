@@ -10,13 +10,12 @@ public class cd6 {
     }
     public static String reverseWords(String str){
         //write your code here...
-           String arr[];
-           String result = "";
-           arr = str.split(" ");
-           for(int i=arr.length-1;i>=0;i--){
-               result = result + " " +arr[i];
-           }
-           return result.trim();
-       }
-   }
+        String arr[];
+        String result = "";
+        arr = str.split(" ");
+        for(int i=arr.length-1;i>=0;i--){
+            result = result + " " +arr[i];
+        }
+        return result.trim();
+    }
 }
