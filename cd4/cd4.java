@@ -28,18 +28,38 @@ please ask before translating
 */
 public class cd4 {
     public static void main(String args[]) {
-        System.out.println("Task is not done.");
-        System.out.println(Double.toString(weight(10,700)));
-        //System.out.println(Double.toString(weight(8,1108)));
-        //System.out.println(Double.toString(weight(26,4037)));
+        //System.out.println("Task is not done.");
+        // double res=0;
+        // double k = 1.862947434565763;//1.86294;
+        // for (long i=0;i<100000000;i++){
+        //     res = weight(10,700, k);
+        //     if (res < 120.21882500408238){
+        //         k -= 0.000000000000001;
+        //     } else if (res > 120.21882500408238) {
+        //         k += 0.000000000000001;
+        //     } else {
+        //         System.out.println("DONE!!!! k="+Double.toString(k));
+        //         break;
+        //     }
+        //     //System.out.println("res="+Double.toString(res)+" k="+Double.toString(k));
+        // }
+        // System.out.println("k="+Double.toString(k));
+        // System.out.println(Double.toString(res));
+        // System.out.println("120.21882500408238");
+
+        double k = 1.8629474345656987;
+        System.out.println(Double.toString(weight(10,700, k)));
+        System.out.println("120.21882500408238");
+        System.out.println(Double.toString(weight(8,1108, k)));
+        System.out.println("190.28922301858418");
     }
 
-    static double weight(long n, long w){
+    static double weight(long n, long w, double k){
         double i0 = 0.14849853757254047;
         double in = i0;
         double result = 0;
         for (int i=1;i<=n;i++){
-            in = in / 2;
+            in = in / k;
             result = result + (in * w);
         }
         return result;
