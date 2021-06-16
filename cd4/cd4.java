@@ -47,19 +47,19 @@ public class cd4 {
         // System.out.println(Double.toString(res));
         // System.out.println("120.21882500408238");
 
-        double k = 1.8629474345656987;
-        System.out.println(Double.toString(weight(10,700, k)));
+        //double k = 1.8629474345656987;
+        System.out.println(Double.toString(weight(10,700)));
         System.out.println("120.21882500408238");
-        System.out.println(Double.toString(weight(8,1108, k)));
-        System.out.println("190.28922301858418");
+        // System.out.println(Double.toString(weight(8,1108)));
+        // System.out.println("190.28922301858418");
     }
 
-    static double weight(long n, long w, double k){
+    static double weight(long n, long w){
         double i0 = 0.14849853757254047;
         double in = i0;
         double result = 0;
         for (int i=1;i<=n;i++){
-            in = in / k;
+            //in = in
             result = result + (in * w);
         }
         return result;
