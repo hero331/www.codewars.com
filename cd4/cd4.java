@@ -50,18 +50,18 @@ public class cd4 {
         //double k = 1.8629474345656987;
         System.out.println(Double.toString(weight(10,700)));
         System.out.println("120.21882500408238");
-        // System.out.println(Double.toString(weight(8,1108)));
-        // System.out.println("190.28922301858418");
+        System.out.println(Double.toString(weight(8,1108)));
+        System.out.println("190.28922301858418");
     }
 
     static double weight(long n, long w){
         double i0 = 0.14849853757254047;
-        double in = i0;
-        double result = 0;
-        for (int i=1;i<=n;i++){
-            //in = in
-            result = result + (in * w);
+        double s0 = i0 * w;
+        double sn = s0;
+        for(int i=1;i<n;i++){
+            s0 /= Math.E * Math.E;
+            sn += s0;
         }
-        return result;
+        return sn;
     }
 }
