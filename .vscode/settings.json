@@ -1,14 +1,6 @@
 {
     "java.project.sourcePaths": [
-        "cd4",
-        "cd10",
-        "cd11",
-        "cd12",
-        "cd13",
-        "cd14",
-        "cd15",
-        "cd16",
-        "cd17",
-        "6kyu\\kata2"
+        "java/6kyu/cd14",
+        "java/6kyu/cd15"
     ]
 }
